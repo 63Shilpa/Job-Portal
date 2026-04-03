@@ -1,5 +1,5 @@
 {
-  "name": "jobportal",
+  "name": "capstone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +13,8 @@
     "@types/node": "^25.5.0",
     "allure-commandline": "^2.38.1",
     "allure-playwright": "^3.6.0"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
   }
 }
