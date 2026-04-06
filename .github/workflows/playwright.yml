@@ -31,8 +31,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate Allure report from results
-        run: npm run allure:generate
+      - name: Install Java (required for Allure CLI)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Install Allure CLI
+        run: npm install -g allure-commandline --save-dev
+
+      - name: Generate Allure report
+        run: allure generate allure-results --clean -o allure-report-output
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
@@ -40,7 +49,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: automation/reports/allure-report
+          path: allure-report-output
 
   deploy:
     needs: build-and-deploy-allure
