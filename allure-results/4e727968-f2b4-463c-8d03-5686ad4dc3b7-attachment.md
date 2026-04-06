@@ -1,0 +1,51 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "Job Portal Logo Job Portal" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "Job Portal Logo" [ref=e5]
+      - text: Job Portal
+    - generic [ref=e6]:
+      - link "Login" [ref=e7] [cursor=pointer]:
+        - /url: /login
+        - button "Login" [ref=e8]
+      - link "Register" [ref=e9] [cursor=pointer]:
+        - /url: /jobseeker/register
+        - button "Register" [ref=e10]
+  - generic [ref=e12]:
+    - heading "Recruiter Register" [level=1] [ref=e13]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Name
+        - textbox "Name" [ref=e17]
+      - generic [ref=e18]:
+        - generic [ref=e19]: Email
+        - textbox "Email" [ref=e20]
+      - generic [ref=e21]:
+        - generic [ref=e22]: Mobile
+        - textbox "Mobile" [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]: Company Name
+        - textbox "Company Name" [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]: Password
+        - textbox "Password" [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e31]: Confirm Password
+        - textbox "Confirm Password" [ref=e32]
+      - button "Register" [ref=e33] [cursor=pointer]
+      - paragraph [ref=e34]:
+        - text: Are you a Job Seeker?
+        - link "Register here" [ref=e35] [cursor=pointer]:
+          - /url: /jobseeker/register
+  - contentinfo [ref=e36]:
+    - generic [ref=e38]:
+      - link "About Us" [ref=e39] [cursor=pointer]:
+        - /url: /about-us
+      - link "Privacy Policy" [ref=e40] [cursor=pointer]:
+        - /url: /privacy-policy
+      - link "Terms of Service" [ref=e41] [cursor=pointer]:
+        - /url: /terms
+```
